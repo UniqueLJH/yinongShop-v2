@@ -12,7 +12,7 @@ define("port", default=8000, help="run on the given port", type=int)
 class IndexHandler(tornado.web.RequestHandler):
 
     def get(self):
-        self.render('index.html')
+        self.render('index1.html')
 
 settings = {
     'template_path':os.path.join(os.path.dirname(__file__), 'templates'),
